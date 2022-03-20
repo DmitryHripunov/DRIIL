@@ -1,10 +1,10 @@
 {
-  "name": "Geologicdrill",
+  "name": "site name",
   "version": "1.0.0",
-  "description": "Верстка сайта Geologicdrill",
+  "description": "Верстка сайта ...",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --host 0.0.0.0 --watch",
-    "dev-hot": "cross-env NODE_ENV=development webpack-dev-server --open --hot --watch",
+    "dev-hot": "cross-env NODE_ENV=development webpack-dev-server --open --watch",
     "build": "cross-env NODE_ENV=development webpack",
     "production": "cross-env NODE_ENV=production webpack"
   },
