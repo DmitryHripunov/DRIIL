@@ -1,0 +1,25 @@
+@import (reference) "../../less/variables.less";
+
+.desc {
+  &_indent-m {
+    margin-bottom: 28px;
+    color: @gray-medium;
+  }
+
+  &_indent-s {
+    margin-bottom: 15px;
+    color: @gray-medium;
+  }
+}
+
+@media (min-width: @laptop) {
+  .desc {
+    &_indent-m {
+      margin-bottom: 30px;
+    }
+
+    &_w-400 {
+      max-width: 410px;
+    }
+  }
+}

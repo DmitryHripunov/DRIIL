@@ -1,0 +1,53 @@
+<div class="popup js-popup" id="main-popup">
+  <div class="popup__wrapper js-popup-wrapper">
+    <div class="popup__close">
+      <svg class="popup__close js-close-popup">
+        <use xlink:href="#close"></use>
+      </svg>
+    </div>
+
+
+    <div class="popup__header">
+      <svg class="popup__logo">
+        <use xlink:href="#logo"></use>
+      </svg>
+    </div>
+
+    <div class="form">
+      <div class="form__group">
+        <label>
+          <div class="form__label">Ваше имя</div>
+          <input class="form__input" type="text" placeholder="Как к вам обращаться?">
+        </label>
+      </div>
+
+      <div class="form__group">
+        <label>
+          <div class="form__label">Номер телефона</div>
+          <input class="form__input" type="tel" placeholder="Введите ваш номер телефона">
+        </label>
+      </div>
+
+        <div class="form__group">
+          <label>
+            <div class="form__label">Комментарий</div>
+              <textarea class="form__textarea" placeholder="Когда с вами удобнее связаться?"></textarea>
+          </label>
+        </div>
+
+        <div class="form__group">
+          <label>
+            <input class="form__checkbox" type="checkbox" checked>
+            <div class="form__checkbox-text">
+                Даю своё согласие на
+                <a href="#"> <strong>обработку персональных данных</strong></a>
+              </div>
+          </label>
+        </div>
+
+        <div class="form__group">
+          <button class="btn btn_primary form__btn js-get-popup" data-target="#popup-thanks">Оставить заявку</button>
+        </div>
+    </div>
+  </div>
+</div>

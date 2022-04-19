@@ -1,12 +1,143 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Hello World</title>
-</head>
-<body>
+${require('./common.blocks/head/head.html')}
 
+<body class="body">
+  ${require('./common.blocks/header/header.html')}
+
+  <main class="main">
+    <section class="hero">
+      <div class="page-section">
+        <div class="container">
+          <div class="grid">
+            <h1 class="title title_h1 title_hidden-desktop title_indent-m">Профессиональное геологическое оборудование
+            </h1>
+
+            <div class="grid__aside">
+              ${require('./common.blocks/swiper/swiper.html')}
+            </div>
+
+            <div class="grid__info">
+              <h1 class="title title_h1 title_hidden-mobile title_indent-m">Профессиональное геологическое оборудование
+              </h1>
+
+              <h3 class="title title_h3 title_indent-m">Переносной мотобур для отбора ориентированных образцов ПМБ-2б
+              </h3>
+
+              <p class="desc desc_indent-m">
+                Ручной мотобур ПМБ-2б предназначен для отбора геологических, геофизических, геохимических и прочих проб,
+                в частности для
+                отбора ориентированных палеомагнитных кернов стандартного диаметра.
+              </p>
+
+              <ul class="list">
+                <li class="list__item">Бензиновый двигатель 50 см3</li>
+                <li class="list__item">Вес ~5 кг</li>
+                <li class="list__item">Габариты 28 × 44 × 34 см.</li>
+                <li class="list__item">Система охлаждения водяная.</li>
+              </ul>
+
+              <button class="btn btn_primary btn_indent-top-s js-get-popup" data-target="#main-popup">Купить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="what-we-doing">
+      <div class="page-section">
+        <div class="container">
+          <h2 class="title title_h2 title_hidden-desktop title_indent-m">Чем мы занимаемся?</h2>
+
+          <div class="grid grid_reverse">
+            <div class="grid__aside grid__aside_small">
+              <h2 class="title title_h2 title_hidden-mobile title_indent-m">Чем мы занимаемся?</h2>
+
+              <p class="desc desc_indent-m">
+                Компания <strong>Scientific Equipment</strong> занимается разработкой, проектированием и созданием
+                механизмов различного назначения.
+                Нашими основными направлениями деятельности являются работы в разработке высокотемпературного и
+                вакуумного оборудования,
+                а также механизированные системы с высокими требованиями к точности изготовления.
+              </p>
+
+              <a href="#" class="btn btn_primary">Узнать подробнее</a>
+            </div>
+
+            <div class="grid__info">
+              <div class="grid__img-wrapper">
+                <img src="../src/static/img/illustration-1.png" alt="#">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="recommendation">
+      <div class="page-section">
+        <div class="container">
+          <h2 class="title title_h2 title_indent-huge">С этим товаром покупают :</h2>
+
+          <div class="recommendation__wrapper">
+            <div class="recommendation__card">
+              <div class="recommendation__img-wrapper">
+                <img src="../src/static/img/rec-1.png" alt="#">
+              </div>
+
+              <div class="recommendation__info">
+                <h3 class="recommendation__title">Бак переносной с ручным насосом</h3>
+
+                <p class="desc desc_indent-m">10-литровый бак для воды с ручным насосом.</p>
+
+                <button class="btn btn_secondary js-get-popup" data-target="#main-popup">Купить</button>
+              </div>
+            </div>
+
+            <div class="recommendation__card">
+              <div class="recommendation__img-wrapper">
+                <img src="../src/static/img/rec-2.png" alt="#">
+              </div>
+
+              <div class="recommendation__info">
+                <h3 class="recommendation__title">Безрезьбовая буровая коронка с алмазным наконечником</h3>
+
+                <p class="desc desc_indent-m">Буровая коронка из высокопрочной, немагнитной нержавеющей стали</p>
+
+                <button class="btn btn_secondary js-get-popup" data-target="#main-popup">Купить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="page-section">
+      <div class="container">
+          <div class="questions">
+            <div class="grid">
+              <div class="grid__aside">
+                <h2 class="title title_h2">Остались вопросы?</h2>
+
+                <p class="desc desc_w-400">
+                  Закажите обратный звонок, с вами свяжется менеджер и всё объяснит
+                </p>
+              </div>
+
+              <div class="grid__info">
+                <button class="btn btn_primary js-get-popup" data-target="#main-popup">Заказать звонок</button>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  ${require('./common.blocks/footer/footer.html')}
+
+  ${require('./common.blocks/popup/popup.html')}
+
+  ${require('./common.blocks/popup-thanks/popup-thanks.html')}
 </body>
+
 </html>

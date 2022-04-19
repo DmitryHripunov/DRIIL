@@ -1,0 +1,77 @@
+@import (reference) "../../less/variables.less";
+
+.title {
+  font-weight: 500;
+  color: @black;
+
+  &_h1 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  &_h2 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  &_h3 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &_indent-m {
+    margin-bottom: 12px;
+  }
+
+  &_indent-huge {
+    margin-bottom: 40px;
+  }
+
+  &_hidden-desktop {
+    display: block;
+  }
+
+  &_hidden-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: @laptop) {
+  .title {
+    &_h1 {
+      font-size: 35px;
+      line-height: 41px;
+    }
+
+    &_h2 {
+      font-size: 35px;
+    }
+
+    &_h3 {
+      font-size: 22px;
+      line-height: 26px;
+    }
+
+    &_h4 {
+      font-size: 14px;
+      line-height: 17px;
+      font-weight: 400;
+    }
+
+    &_indent-m {
+      margin-bottom: 15px;
+    }
+
+    &_indent-huge {
+      margin-bottom: 90px;
+    }
+
+    &_hidden-desktop {
+      display: none;
+    }
+
+    &_hidden-mobile {
+      display: block;
+    }
+  }
+}

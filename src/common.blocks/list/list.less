@@ -1,0 +1,28 @@
+@import (reference) "../../less/variables.less";
+
+.list {
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: @black;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: url("./img/done.svg") center / cover no-repeat;
+      margin-right: 15px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: @laptop) {
+  .list {
+  }
+}

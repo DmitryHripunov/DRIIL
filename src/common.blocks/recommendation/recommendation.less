@@ -1,0 +1,87 @@
+@import (reference) "../../less/variables.less";
+
+.recommendation {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__card:not(:last-child) {
+    padding-bottom: 36px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid @gray;
+  }
+
+  &__img-wrapper {
+    max-width: 236px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 36px;
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 20px;
+  }
+
+
+}
+
+@media (min-width: @laptop) {
+  .recommendation {
+    &__wrapper {
+      flex-direction: row;
+    }
+
+    &__card:not(:last-child),
+    &__card:nth-child(even) {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom: none;
+      padding-right: 50px;
+      border-right: 2px solid @gray;
+    }
+
+    &__card:nth-child(even) {
+      border-right: none;
+    }
+
+    &__card {
+      display: flex;
+      flex: 0 1 50%;
+    }
+
+    &__title {
+      font-size: 19px;
+      line-height: 23px;
+      margin-bottom: 12px;
+    }
+
+    &_catalog {
+      .recommendation__wrapper {
+        flex-wrap: wrap;
+      }
+
+      .recommendation__card:nth-child(1),
+      .recommendation__card:nth-child(2) {
+        border-bottom: 2px solid @gray;
+      }
+
+      .recommendation__card:nth-child(3) {
+        padding-top: 50px;
+        padding-right: 50px;
+        border-right: 2px solid @gray;
+      }
+
+      .recommendation__card:nth-child(4) {
+        padding-top: 50px;
+      }
+    }
+  }
+}

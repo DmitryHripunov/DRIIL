@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+${require('./common.blocks/head/head.html')}
+
+<body class="body">
+  ${require('./common.blocks/header/header.html')}
+
+  <main class="main">
+    <section class="recommendation recommendation_catalog">
+      <div class="page-section">
+        <div class="container">
+          <h2 class="title title_h2 title_indent-huge">Каталог геологического оборудования</h2>
+
+          <div class="recommendation__wrapper ">
+            <div class="recommendation__card">
+              <div class="recommendation__img-wrapper">
+                <img src="../src/static/img/rec-1.png" alt="#">
+              </div>
+
+              <div class="recommendation__info">
+                <h3 class="recommendation__title">Бак переносной с ручным насосом</h3>
+
+                <p class="desc desc_indent-m">10-литровый бак для воды с ручным насосом.</p>
+
+                <button class="btn btn_secondary js-get-popup" data-target="#main-popup">Купить</button>
+              </div>
+            </div>
+
+            <div class="recommendation__card">
+              <div class="recommendation__img-wrapper">
+                <img src="../src/static/img/rec-2.png" alt="#">
+              </div>
+
+              <div class="recommendation__info">
+                <h3 class="recommendation__title">Безрезьбовая буровая коронка с алмазным наконечником</h3>
+
+                <p class="desc desc_indent-m">Буровая коронка из высокопрочной, немагнитной нержавеющей стали</p>
+
+                <button class="btn btn_secondary js-get-popup" data-target="#main-popup">Купить</button>
+              </div>
+            </div>
+
+            <div class="recommendation__card">
+              <div class="recommendation__img-wrapper">
+                <img src="../src/static/img/rec-2.png" alt="#">
+              </div>
+
+              <div class="recommendation__info">
+                <h3 class="recommendation__title">Безрезьбовая буровая коронка с алмазным наконечником</h3>
+
+                <p class="desc desc_indent-m">Буровая коронка из высокопрочной, немагнитной нержавеющей стали</p>
+
+                <button class="btn btn_secondary js-get-popup" data-target="#main-popup">Купить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="page-section">
+      <div class="container">
+        <div class="questions">
+          <div class="grid">
+            <div class="grid__aside">
+              <h2 class="title title_h2">Остались вопросы?</h2>
+
+              <p class="desc desc_w-400">
+                Закажите обратный звонок, с вами свяжется менеджер и всё объяснит
+              </p>
+            </div>
+
+            <div class="grid__info">
+              <button class="btn btn_primary js-get-popup" data-target="#main-popup">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  ${require('./common.blocks/footer/footer.html')}
+
+  ${require('./common.blocks/popup/popup.html')}
+
+  ${require('./common.blocks/popup-thanks/popup-thanks.html')}
+</body>
+
+</html>

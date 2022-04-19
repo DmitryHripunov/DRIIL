@@ -1,0 +1,59 @@
+@import (reference) "../../less/variables.less";
+
+.popup {
+  position: fixed;
+  z-index: 11;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(89, 89, 89, 0.5);
+  display: none;
+  overflow-y: auto;
+  height: 100%;
+
+  &.is-active {
+    display: block;
+  }
+
+  &__wrapper {
+    position: sticky;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 12;
+    padding: 25px 38px 32px;
+    width: 100%;
+    height: auto;
+    max-width: 590px;
+    border-radius: 20px;
+    background-color: @white;
+
+    &_dark {
+      background-color:  @dark;
+    }
+  }
+
+  &__close {
+    width: 16px;
+    height: 16px;
+    display: block;
+    margin-left: auto;
+    margin-bottom: 60px;
+    cursor: pointer;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 57px;
+  }
+
+  &__logo {
+    width: 206px;
+    height: 24px;
+  }
+}
+

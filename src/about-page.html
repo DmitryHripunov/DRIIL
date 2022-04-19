@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+${require('./common.blocks/head/head.html')}
+
+<body class="body">
+  ${require('./common.blocks/header/header.html')}
+
+  <main class="main">
+    <div class="page-section">
+      <div class="container">
+        <div class="grid">
+          <div class="grid__aside">
+            <img src="../src/static/img/about.jpg" alt="#">
+          </div>
+
+          <div class="grid__info">
+            <h2 class="title title_h2 title_indent-m">О нас
+            </h2>
+
+            <p class="desc desc_indent-m">
+              Scientific Equipment – небольшая научно-производственная компания, специализирующаяся на разработке,
+              производстве и
+              внедрении высокоточного оборудования и сопутствующих изделий. Наши разработки используются в ведущих
+              институтах страны.
+              Основу команды составляют специалисты и разработчики, имеющие опыт научной, инженерной и инновационной
+              деятельности.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-section">
+      <div class="container">
+        <div class="grid grid_reverse">
+          <div class="grid__aside">
+            <h2 class="title title_h2 title_indent-m">Контакты
+            </h2>
+
+            <p class="desc desc_indent-m">
+              E-mail scienteq.pro@gmail.com
+            </p>
+          </div>
+
+          <div class="grid__info">
+            <img src="../src/static/img/about.jpg" alt="#">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-section">
+      <div class="container">
+        <div class="questions">
+          <div class="grid">
+            <div class="grid__aside">
+              <h2 class="title title_h2">Остались вопросы?</h2>
+
+              <p class="desc desc_w-400">
+                Закажите обратный звонок, с вами свяжется менеджер и всё объяснит
+              </p>
+            </div>
+
+            <div class="grid__info">
+              <button class="btn btn_primary js-get-popup" data-target="#main-popup">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  ${require('./common.blocks/footer/footer.html')}
+
+  ${require('./common.blocks/popup/popup.html')}
+
+  ${require('./common.blocks/popup-thanks/popup-thanks.html')}
+</body>
+
+</html>

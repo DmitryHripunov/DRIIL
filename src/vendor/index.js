@@ -27,10 +27,6 @@
 // require("slick-carousel/slick/slick-theme.css");
 // require("expose-loader?slick!slick-carousel");
 
-// swiper slider
-// require("swiper/dist/css/swiper.css");
-// require("expose-loader?Swiper!swiper/dist/js/swiper.js");
-
 // vue.js
 // import Vue from 'vue';
 // window.Vue = Vue;
@@ -60,6 +56,10 @@
 // lightbox
 // require("lightbox2");
 // require("lightbox2/dist/css/lightbox.css");
+
+// swiper slider
+require("swiper/dist/css/swiper.min.css");
+require("expose-loader?Swiper!swiper/dist/js/swiper.js");
 
 // normalize.css
 require('normalize.css/normalize.css');

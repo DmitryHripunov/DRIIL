@@ -1,0 +1,80 @@
+@import (reference) "../../less/variables.less";
+
+.footer {
+  padding-bottom: 20px;
+
+  &__logo {
+    display: inline-block;
+    margin-bottom: 28px;
+  }
+
+  &__logo-icon {
+    width: 247px;
+    height: 28px;
+  }
+
+  &__nav {
+    margin-bottom: 28px;
+  }
+
+  &__nav-item {
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__nav-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    @hover-link();
+  }
+
+  &__address-item {
+    &:not(:last-child) {
+      margin-bottom: 21px;
+    }
+
+    &:first-child {
+      .footer__address-link {
+        color: @green;
+      }
+    }
+  }
+
+  &__address-link {
+    line-height: 19px;
+    font-size: 16px;
+    @hover-link();
+  }
+
+  &__bottom {
+    margin-top: 70px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #AFB5C0;
+  }
+}
+
+@media (min-width: @laptop) {
+  .footer {
+    &__logo {
+      margin-bottom: 0;
+      margin-right: 16px;
+    }
+
+    &__main {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__nav {
+      margin-bottom: 0;
+      margin-right: 55px;
+    }
+
+    &__info {
+      display: flex;
+    }
+  }
+}

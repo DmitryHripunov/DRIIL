@@ -1,0 +1,140 @@
+@import (reference) "../../less/variables.less";
+
+.nav {
+  position: absolute;
+  top: 69px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 30px 0;
+  margin-left: auto;
+  padding: 30px 16px 30px 16px;
+  left: -110%;
+  z-index: 11;
+  height: 100%;
+  background-color: @white;
+  transition: left 0.3s ease-in-out;
+
+  &.is-opened {
+    width: 100%;
+    padding-bottom: 100px;
+    left: 0;
+    overflow-y: auto;
+  }
+
+  &__item {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    color: @gray-medium;
+
+    &:not(&_coord) {
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 26px;
+    }
+
+    &.is-active-link {
+      color: @green;
+    }
+
+    &_dropdown.is-active {
+      color: @green;
+
+      .nav__dropdown {
+        padding: 26px 0 0 34px;
+        opacity: 1;
+        height: auto;
+        pointer-events: unset;
+      }
+
+      .nav__dropdown-item {
+        color: @gray-medium;
+      }
+    }
+  }
+
+  &__item:not(&__item_dropdown) {
+    @hover-link();
+  }
+
+  &__dropdown {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 30px 0;
+    max-width: 295px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 0;
+    opacity: 0;
+    height: 0;
+    pointer-events: none;
+    transition: padding-top 0.2s ease-in-out;
+  }
+}
+
+@media (min-width: @laptop) {
+  .nav {
+    position: static;
+    flex-direction: row;
+    grid-gap: 0 32px;
+    padding: 0;
+    height: auto;
+    width: auto;
+    z-index: unset;
+    background-color: transparent;
+
+    &.is-opened {
+      height: auto;
+      width: auto;
+      left: unset;
+      padding-bottom: inherit;
+      overflow-y: unset;
+      z-index: unset;
+    }
+
+    &__item:not(&_coord) {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    &__item {
+      &_dropdown:hover .nav__dropdown {
+        padding: 16px;
+        top: 100%;
+        z-index: 11;
+        opacity: 1;
+        pointer-events: unset;
+      }
+
+      &:hover {
+        .nav__text-dropdown {
+          color: @green;
+        }
+        .nav__dropdown-item {
+          @hover-link();
+        }
+      }
+    }
+
+    &__dropdown {
+      position: absolute;
+      left: -16px;
+      right: -200%;
+      max-width: 330px;
+      height: auto;
+      padding: 0 16px 0 16px;
+      background: @white;
+      box-shadow: 0px 6px 10px rgba(6, 43, 23, 0.1);
+      border-radius: 4px;
+      grid-gap: 16px 0;
+      z-index: -2;
+      top: -100%;
+      max-width: unset;
+      pointer-events: unset;
+      pointer-events: none;
+    }
+  }
+}

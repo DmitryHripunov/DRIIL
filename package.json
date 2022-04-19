@@ -1,7 +1,7 @@
 {
-  "name": "site name",
+  "name": "Geologicdrill",
   "version": "1.0.0",
-  "description": "Верстка сайта ...",
+  "description": "Верстка сайта Geologicdrill",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --host 0.0.0.0 --watch",
     "dev-hot": "cross-env NODE_ENV=development webpack-dev-server --open --watch",
@@ -21,7 +21,8 @@
   "dependencies": {
     "normalize.css": "^8.0.0",
     "vue": "^2.5.16",
-    "babel-polyfill": "^6.26.0"
+    "babel-polyfill": "^6.26.0",
+    "swiper": "^4.5.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.2.6",

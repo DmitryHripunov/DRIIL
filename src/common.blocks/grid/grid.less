@@ -1,0 +1,31 @@
+@import (reference) "../../less/variables.less";
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 16px 0;
+
+  &_reverse {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: @laptop) {
+  .grid {
+    flex-direction: row;
+    align-items: flex-start;
+    grid-gap: 0 74px;
+
+    &__aside {
+      flex: 0 0 50%;
+
+      &_small {
+        padding-right: 40px;
+      }
+    }
+
+    &__img-wrapper {
+      margin: 0 auto;
+    }
+  }
+}
